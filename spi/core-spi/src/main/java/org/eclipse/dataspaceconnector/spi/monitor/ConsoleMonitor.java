@@ -37,7 +37,7 @@ public class ConsoleMonitor implements Monitor {
 
     public ConsoleMonitor() {
         this.prefix = "";
-        this.level = Level.DEBUG;
+        this.level = Level.INFO;
     }
 
     public ConsoleMonitor(@Nullable String runtimeName, Level level) {
