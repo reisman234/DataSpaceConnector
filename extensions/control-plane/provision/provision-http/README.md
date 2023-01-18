@@ -1,10 +1,10 @@
 # provision-http
 
-Execute arbitrary code in a external http backend in provision phase bevor transfer.
-Creation or preparation of data that will be transfererd in the following transfer phase.
+Execute arbitrary code in an external HTTP backend in a provision phase before transfer.
+Creation or preparation of data that will be transferred in the following transfer phase.
 Provision phase can take an arbitrary amount of time to complete.
 The end of provisioning is indicated by the execution of a callback.
-With this callback the DataAddress can be specified, from which the provider connector the data will load.
+With this callback, the DataAddress can be specified, from which the provider connector the data will load.
 
 ## Prerequisite
 
@@ -26,10 +26,9 @@ provisioner.http.entries.default.data.address.type=HttpProvision
 ```
 
 Static Configuration to register a provisioner.
-Multiple provisioner can be defined by set a new entry name (switch "default"), and adapt `endpoint` and `data.address.type`.
-The resolution of the used provisioner will only be determined by matching values of `data.address.type` in the config and `dataAddress.properties.type` in the asset.
-At the moment no proxy of values for header, path or query in the asses `dataAddress.properties` to the backend provisioner implemented.
-
+Multiple provisioner can be defined by set a new entry name (switch "default"), and adapt endpoint and data.address.type.
+The resolution of the used provisioner will only be determined by matching values of data.address.type in the config and dataAddress.properties.type in the asset.
+At the moment no proxy of values for header, path or query in the asses dataAddress.properties to the backend provisioner implemented.
 
 **Provisioner Asset**
 
@@ -61,7 +60,7 @@ curl --location --request POST 'http://localhost:8182/api/v1/management/assets' 
 
 ## Provisioner Backend
 
-Example Provisioner Backend in Python
+Example of a Provisioner Backend in Python with FastAPI
 
 ```python
 from pydantic import BaseModel
