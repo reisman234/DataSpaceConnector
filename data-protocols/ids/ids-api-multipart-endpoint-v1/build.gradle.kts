@@ -29,8 +29,8 @@ dependencies {
     implementation(libs.jersey.multipart)
 
     testImplementation("net.javacrumbs.json-unit:json-unit-assertj:2.37.0")
-    testImplementation("net.javacrumbs.json-unit:json-unit-json-path:2.36.1")
-    testImplementation("net.javacrumbs.json-unit:json-unit:2.36.1")
+    testImplementation("net.javacrumbs.json-unit:json-unit-json-path:3.2.4")
+    testImplementation("net.javacrumbs.json-unit:json-unit:3.2.4")
 
     testImplementation(project(":core:common:junit"))
 
